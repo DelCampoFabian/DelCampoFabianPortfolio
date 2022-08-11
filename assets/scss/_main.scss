@@ -1,0 +1,200 @@
+.sobreMi{
+    padding-top: 60px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    h2{
+        font-size: $titulosMobile;
+        font-family: $lobster;
+        color: $colorNaranja;
+        text-align: center;
+        margin: 32px auto;
+    }
+    .sobreMi-container {
+        .sobreMi-img{
+            width: 90%;
+            margin: auto;
+            img {
+                width: 100%;
+                height: 300px;
+
+            }
+        }
+        .sobreMi-text{
+            padding: 16px 32px;
+            text-align: justify;
+            color: $colorBlanco;
+            font-size: $parrafosMobile;
+            font-weight: 600;
+        }
+
+    }
+}
+
+/* Habilidades */
+
+.habilidades {
+    padding-top: 60px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    h2{
+        font-size: $titulosMobile;
+        font-family: $lobster;
+        color: $colorNaranja;
+        text-align: center;
+        margin: 32px auto;
+    }
+    .habilidades-container {
+        h3 {
+            padding: 0 16px;
+            margin: 16px 32px;
+            font-size: $subtitulosDesktop;
+            font-weight: 600;
+            color: $colorBlanco;
+            border-left: 10px solid $colorNaranja;
+        }
+        .habilidades-img {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50px;
+                height: 50px;
+                margin: 24px;
+            }
+        }
+        p {
+            padding: 16px 32px;
+            text-align: justify;
+            color: $colorBlanco;
+            font-size: $parrafosMobile;
+            font-weight: 600;
+        }
+    }
+}
+/* proyectos */
+
+.proyectos {
+    padding-top: 60px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;;
+    h2{
+        font-size: $titulosMobile;
+        font-family: $lobster;
+        color: $colorNaranja;
+        text-align: center;
+        margin: 32px auto;
+    }
+    .proyectos-container {
+        width: 80%;
+        margin: 32px auto;
+        background-color: $colorNegro;
+        position: relative;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover img {
+            opacity: 1;
+        }
+        &:hover h5 {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            opacity: .3;
+            border-radius: 8px;
+            transition-duration: .5s;
+        }
+        h5 {
+            font-size: $subtitulosDesktop;
+            font-weight: 700;
+            width: 100%;
+            color: $colorBlanco;
+            text-align: center;
+            position: absolute;
+            top: 100px;
+        }
+    }
+}
+
+/* contacto */
+.contacto {
+    padding-top: 60px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    h2 {
+        font-size: $titulosMobile;
+        font-family: $lobster;
+        color: $colorNaranja;
+        text-align: center;
+        margin: 32px auto;
+    }
+    .contacto-form {
+        padding: 16px 32px;
+        text-align: center;
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 16px auto;
+            
+            .form__input, textarea{
+                width: 75%;
+                padding: 8px 12px;
+                background-color: $colorNegro;
+                border: 2px solid $colorNaranja;
+                border-radius: 3px;
+                outline: none;
+                color: $colorBlanco;
+            }
+            textarea {
+                resize: none;
+                height: 100px;
+            }
+            .form__label {
+                width: 30%;
+                padding: 10px;
+                color: $colorNaranja;
+                font-size: 16px;
+            }
+        }
+        .form-btn{
+            text-align: center;
+            padding: 8px 32px;
+            border: 2px solid $colorNaranja;
+            color: $colorBlanco;
+            background-color: $colorNegro;
+            font-size: 20px;
+            font-weight: 600;
+            &:hover {
+                background-color: $colorNaranja;
+            }
+        }
+    }
+    .contacto-extra{
+        h5,h6{
+            font-size: $subtitulosMobile;
+            color: $colorNaranja;
+            text-align: center;
+            margin: 32px auto;
+        }  
+    }
+    .contacto-redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 32px;
+            padding: 16px 32px;
+            a{
+                color: $colorNaranja;
+            }
+        }
+    }
+}
