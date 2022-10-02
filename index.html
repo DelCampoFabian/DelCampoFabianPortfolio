@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,8 @@
     <!-- bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Libreria Animación  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -28,6 +31,11 @@
                 <li class="nav__links"><a href="#Proyectos">Proyectos</a></li>
                 <li class="nav__links"><a href="#Contacto">Contacto</a></li>
             </ul>
+            <div class="nav-redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
             <div class="nav__toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -35,118 +43,130 @@
                 <i class="fa-solid fa-xmark"></i>
             </div>
         </nav>
-        <div class="home-titulos">
-            <h1>Del Campo Fabián</h1>
-            <h2>Frontend Developer</h2>
-        </div>.
-        <div class="home-container">
-            <div class="home-img">
-                <img src="./assets/img/undraw_join_re_w1lh.svg" alt="">
+        <div class="home-desktop__container">
+            <div class="home-titulos">
+                <h1>Del Campo Fabián</h1>
+                <h2>Frontend Developer</h2>
+            </div>.
+            <div class="home-container">
+                <div class="home-img">
+                    <img src="./assets/img/fotoPerfil.jpg" alt="">
+                </div>
+                <div class="home-path"></div>
             </div>
-            <div class="home-path"></div>
         </div>
     </header>
 
     <!-- MAIN -->
 
-    <main>
+    <main class="row justify-content-center">
         <!-- Sobre mi -->
-        <section id="sobreMi" class="sobreMi">
-            <h2>Sobre Mi</h2> 
-            <div class="sobreMi-container">
-                <div class="sobreMi-img">
-                    <img src="./assets/img/undraw_join_re_w1lh.svg" alt="">
+        <section id="sobreMi" class="sobreMi col-md-10 col-lg-5" data-aos="fade-right" data-aos-duration="1500">
+            <h2>Sobre Mi</h2>
+            <div class="sobreMi__container">
+                <div class="sobreMi__container-img">
+                    <img src="./assets/img/fotoPerfil.jpg" alt="Fabián Del Campo">
                 </div>
-                <div class="sobreMi-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit non maxime. Quasi nihil repudiandae omnis suscipit! Iste, reprehenderit sapiente? Natus vitae omnis voluptas, aliquam, odio sed dolores illum necessitatibus blanditiis consequuntur sequi repellendus laborum iste voluptatum, doloremque numquam facere odit placeat cupiditate sit recusandae. Dignissimos voluptatibus explicabo cumque expedita.</p>
+                <div class="sobreMi__container-text">
+                    <h3 class="text__titulo">Mi nombre es Fabián Del Campo y soy desarrollador Front end. </h3>
+                    <p class="text__parrafo">Estoy en el camino de convertirme en un Programador Full Stack. Me
+                        encuentro aprendiendo programación Back End en Coderhouse.</p>
+                    <p class="text__parrafo">Actualmente estoy en la búsqueda de nuevos desafíos que me ayuden a crecer
+                        tanto profesional como personalmente.
+                    </p>
                 </div>
-            </div>
-        </section>
-        <!-- Habilidades -->
-        <section id="Habilidades" class="habilidades">
-            <h2>Habilidades</h2>
-            <div class="habilidades-container">
-                <h3>Desarrollo Web</h3>
-                <div class="habilidades-img">
-                    <img src="./assets/img/html-svgrepo-com.svg" alt="">
-                    <img src="./assets/img/css-svgrepo-com.svg" alt="">
-                    <img src="./assets/img/git-icon-svgrepo-com.svg" alt="">
-                    <img src="./assets/img/github-svgrepo-com.svg" alt="">
-                    <img src="./assets/img/bootstrap-4-logo-svgrepo-com.svg" alt="">
-                    <img src="./assets/img/sass-svgrepo-com.svg" alt="">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus harum excepturi adipisci est mollitia voluptatum sequi iste officiis nemo! Quam.</p>
-            </div>
-            <div class="habilidades-container">
-                <h3>JavaScript</h3>
-                <div class="habilidades-img">
-                    <img src="./assets/img/js-official-svgrepo-com.svg" alt="">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus harum excepturi adipisci est mollitia voluptatum sequi iste officiis nemo! Quam.</p>
-            </div>
-        </section>
-        <!-- Proyectos -->
-        <section id="Proyectos" class="proyectos">
-            <h2>Proyectos</h2>
-            <div class="proyectos-container">
-                <img src="./assets/img/Screenshot_578.png" alt="">
-                <h5>Proyecto Coderhouse</h5>
-            </div>
-            <div class="proyectos-container">
-                <img src="./assets/img/Screenshot_578.png" alt="">
-                <h5>Proyecto Coderhouse</h5>
-            </div>
-            <div class="proyectos-container">
-                <img src="./assets/img/Screenshot_578.png" alt="">
-                <h5>Proyecto Coderhouse</h5>
-            </div>
-        </section>
-        <section id="Contacto" class="contacto">
-            <h2>Contactame</h2>
-            <form class="contacto-form">
-                <div class="form-container">
-                    <label class="form__label">Nombre:</label>
-                    <input class="form__input" type="text">
-                </div>
-                <div class="form-container">
-                    <label class="form__label">Correo:</label>
-                    <input class="form__input" type="email">
-                </div>
-                <div class="form-container">
-                    <label class="form__label">Mensaje:</label>
-                    <textarea></textarea>
-                </div>
-                <input  class="form-btn" type="submit" value="Enviar">
-            </form>
+                <div class="sobreMi__masInfo">
+                    <h4>Edad: <span>24 años</span></h4>
+                    <h4>Localidad: <span>Rio Gallegos, Santa cruz.</span></h4>
+                    <h4>Email: <span>fabydelcampo@hotmail.com</span></h4>
+                    <a class="masInfo__enlace" href="#" target="_BLANK">Ver CV</a>
 
-            <div class="contacto-extra">
-                <h5>Del Campo Fabián</h5>
-                <h6>Contacto</h6>
+                </div>
             </div>
-            <div class="contacto-redes">
-                <p><a href="#"><i class="fa-brands fa-linkedin"></i></a></p>
-                <p><a href="#"><i class="fa-brands fa-github"></i></a></p>
-                <p><a href="#"><i class="fa-brands fa-whatsapp"></i></a></p>
+        </section>
+
+        <!-- Habilidades -->
+
+        <section id="Habilidades" class="habilidades col-md-10 col-lg-5" data-aos="fade-left" data-aos-duration="1500">
+            <h2>Habilidades</h2>
+            <div class="habilidades__container" >
+                <h3>Front end</h3>
+                <div class="habilidades__img">
+                    <img src="./assets/img/html-svgrepo-com.svg" alt="HTML">
+                    <img src="./assets/img/css-svgrepo-com.svg" alt="CSS">
+                    <img src="./assets/img/js-official-svgrepo-com.svg" alt="JavaScript">
+                    <img src="./assets/img/react.svg" alt="React JS">
+                    <img src="./assets/img/bootstrap-4-logo-svgrepo-com.svg" alt="Bootstrap">
+                    <img src="./assets/img/sass-svgrepo-com.svg" alt="Sass">
+                </div>
+            </div>
+            <div class="habilidades__container">
+                <h3>Back end (cursando)</h3>
+                <div class="habilidades__img">
+                    <img src="./assets/img/git-icon-svgrepo-com.svg" alt="Git">
+                    <img src="./assets/img/github-svgrepo-com.svg" alt="Git Hub">
+                </div>
+            </div>
+            <div class="habilidades__container">
+                <h3>Herramientas</h3>
+                <div class="habilidades__img">
+                    <img src="./assets/img/git-icon-svgrepo-com.svg" alt="Git">
+                    <img src="./assets/img/github-svgrepo-com.svg" alt="Git Hub">
+                    <img src="./assets/img/microsoft-windows-22-logo-svgrepo-com.svg" alt="Window 10">
+                    <img src="./assets/img/visual-studio-code-logo-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <!-- proyectos -->
+        
+        <section id="Proyectos" class="proyectos col-lg-10 text-center">
+            <h2>Proyectos</h2>
+            <div class="container__desktop">
+                <a href="https://www.facebook.com" target="_blank">
+                    <div class="proyectos__container" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="./assets/img/Screenshot_578.png" alt="">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <div class="proyectos__container" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="./assets/img/Screenshot_578.png" alt="">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <div class="proyectos__container" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="./assets/img/Screenshot_578.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section id="Contacto" class="contacto">
+            
+            <h2>Contactame</h2>
+            <div class="contacto__extra">
+                <h5>Del Campo Fabián</h5>
+            </div>
+            <div class="contacto__redes">
+                <p> <a href="https://www.linkedin.com/in/fabian-del-campo-705817250/">Linkedin <i class="fa-brands fa-linkedin"></i></a></p>
+                <p> <a href="https://github.com/DelCampoFabian">GitHub <i class="fa-brands fa-github"></i></a></p>
+                <p> <a href="https://api.whatsapp.com/send?phone=542966642599">WhatsApp <i class="fa-brands fa-whatsapp"></i></a></p>
             </div>
         </section>
     </main>
-  >
-       
-    
-
-
-
-
-
-
-
-
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5612fcab1f.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Libreria animación -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     <script src="./assets/js/main.js"></script>
 </body>

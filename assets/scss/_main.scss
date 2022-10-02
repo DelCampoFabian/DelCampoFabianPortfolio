@@ -1,6 +1,5 @@
 .sobreMi{
     padding-top: 60px;
-    width: 100%;
     min-height: 100vh;
     overflow: hidden;
     h2{
@@ -10,32 +9,71 @@
         text-align: center;
         margin: 32px auto;
     }
-    .sobreMi-container {
-        .sobreMi-img{
-            width: 90%;
-            margin: auto;
+    .sobreMi__container {
+        background-color: #232323;
+        padding: 15px 10px;
+        .sobreMi__container-img{
+            display: flex;
+            justify-content: center;
+            
             img {
-                width: 100%;
-                height: 300px;
-
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            
             }
         }
-        .sobreMi-text{
-            padding: 16px 32px;
-            text-align: justify;
+        .sobreMi__container-text{
+            padding: 16px;
             color: $colorBlanco;
             font-size: $parrafosMobile;
-            font-weight: 600;
+            .text__titulo {
+                font-size: 20px;
+                text-align: center;
+                font-weight: 600;
+                line-height: 30px;
+            }
+            .text__parrafo {
+                text-align: center;
+            }
+            
         }
 
     }
+    .sobreMi__masInfo{
+        color: $colorBlanco;
+        padding: 16px;
+        h4{
+            font-size: $parrafosMobile;
+            line-height: 28px;
+        }
+        .masInfo__enlace{
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px 25px;
+            text-decoration: none;
+            color: $colorBlanco;
+            font-weight: 600;
+            background-color: transparent;
+            border: 1px solid $colorNaranja;
+            border-radius: 2px;
+            transition-duration: .3s;
+            &:hover {
+                color: $colorNegro;
+                background-color: $colorNaranja;
+
+            }
+            
+        }
+        
+    }
 }
+
 
 /* Habilidades */
 
 .habilidades {
     padding-top: 60px;
-    width: 100%;
     min-height: 100vh;
     overflow: hidden;
     h2{
@@ -45,16 +83,17 @@
         text-align: center;
         margin: 32px auto;
     }
-    .habilidades-container {
+    .habilidades__container {
+        background-color: #232323;
+        padding: 16px;
         h3 {
             padding: 0 16px;
-            margin: 16px 32px;
             font-size: $subtitulosDesktop;
             font-weight: 600;
             color: $colorBlanco;
             border-left: 10px solid $colorNaranja;
         }
-        .habilidades-img {
+        .habilidades__img {
             width: 80%;
             margin: auto;
             display: flex;
@@ -64,25 +103,22 @@
             img {
                 width: 50px;
                 height: 50px;
-                margin: 24px;
+                margin: 20px;
+                transition-duration: .3s;
+                &:hover {
+                    transform: scale(1.3);
+                }
             }
         }
-        p {
-            padding: 16px 32px;
-            text-align: justify;
-            color: $colorBlanco;
-            font-size: $parrafosMobile;
-            font-weight: 600;
-        }
+      
     }
 }
 /* proyectos */
 
 .proyectos {
     padding-top: 60px;
-    width: 100%;
     min-height: 100vh;
-    overflow: hidden;;
+    overflow: hidden;
     h2{
         font-size: $titulosMobile;
         font-family: $lobster;
@@ -90,12 +126,9 @@
         text-align: center;
         margin: 32px auto;
     }
-    .proyectos-container {
-        width: 80%;
+    .proyectos__container {
         margin: 32px auto;
-        background-color: $colorNegro;
-        position: relative;
-        border-radius: 8px;
+        border-radius: 4px;
         cursor: pointer;
         &:hover img {
             opacity: 1;
@@ -104,20 +137,10 @@
             display: none;
         }
         img {
-            width: 100%;
             height: 300px;
             opacity: .3;
-            border-radius: 8px;
+            border-radius: 4px;
             transition-duration: .5s;
-        }
-        h5 {
-            font-size: $subtitulosDesktop;
-            font-weight: 700;
-            width: 100%;
-            color: $colorBlanco;
-            text-align: center;
-            position: absolute;
-            top: 100px;
         }
     }
 }
@@ -125,7 +148,6 @@
 /* contacto */
 .contacto {
     padding-top: 60px;
-    width: 100%;
     min-height: 100vh;
     overflow: hidden;
     h2 {
@@ -135,57 +157,15 @@
         text-align: center;
         margin: 32px auto;
     }
-    .contacto-form {
-        padding: 16px 32px;
-        text-align: center;
-        .form-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 16px auto;
-            
-            .form__input, textarea{
-                width: 75%;
-                padding: 8px 12px;
-                background-color: $colorNegro;
-                border: 2px solid $colorNaranja;
-                border-radius: 3px;
-                outline: none;
-                color: $colorBlanco;
-            }
-            textarea {
-                resize: none;
-                height: 100px;
-            }
-            .form__label {
-                width: 30%;
-                padding: 10px;
-                color: $colorNaranja;
-                font-size: 16px;
-            }
-        }
-        .form-btn{
-            text-align: center;
-            padding: 8px 32px;
-            border: 2px solid $colorNaranja;
-            color: $colorBlanco;
-            background-color: $colorNegro;
-            font-size: 20px;
-            font-weight: 600;
-            &:hover {
-                background-color: $colorNaranja;
-            }
-        }
-    }
-    .contacto-extra{
-        h5,h6{
+    .contacto__extra{
+        h5{
             font-size: $subtitulosMobile;
             color: $colorNaranja;
             text-align: center;
             margin: 32px auto;
         }  
     }
-    .contacto-redes {
+    .contacto__redes {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -194,6 +174,9 @@
             padding: 16px 32px;
             a{
                 color: $colorNaranja;
+                &:hover {
+                    color: $colorBlanco;
+                }
             }
         }
     }
