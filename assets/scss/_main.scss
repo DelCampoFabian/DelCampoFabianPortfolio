@@ -2,6 +2,8 @@
     padding-top: 60px;
     min-height: 100vh;
     overflow: hidden;
+    
+    transition: all 1s;
     h2{
         font-size: $titulosMobile;
         font-family: $lobster;
@@ -10,16 +12,16 @@
         margin: 32px auto;
     }
     .sobreMi__container {
-        background-color: #232323;
         padding: 15px 10px;
         .sobreMi__container-img{
             display: flex;
             justify-content: center;
-            
             img {
-                width: 200px;
-                height: 200px;
+                width: 150px;
+                height: 150px;
                 border-radius: 50%;
+                border: 2px solid $colorNaranja;
+                box-shadow: 0px 0px 60px 0 $colorNaranja;
             
             }
         }
@@ -28,7 +30,7 @@
             color: $colorBlanco;
             font-size: $parrafosMobile;
             .text__titulo {
-                font-size: 20px;
+                font-size: 18px;
                 text-align: center;
                 font-weight: 600;
                 line-height: 30px;
@@ -44,7 +46,7 @@
         color: $colorBlanco;
         padding: 16px;
         h4{
-            font-size: $parrafosMobile;
+            font-size: 18px;
             line-height: 28px;
         }
         .masInfo__enlace{
@@ -53,6 +55,7 @@
             padding: 5px 25px;
             text-decoration: none;
             color: $colorBlanco;
+            font-size: $parrafosMobile;
             font-weight: 600;
             background-color: transparent;
             border: 1px solid $colorNaranja;
@@ -84,14 +87,11 @@
         margin: 32px auto;
     }
     .habilidades__container {
-        background-color: #232323;
         padding: 16px;
-        h3 {
-            padding: 0 16px;
-            font-size: $subtitulosDesktop;
-            font-weight: 600;
+        h3 {    
+            font-size: 14px;
+            font-weight: 500;
             color: $colorBlanco;
-            border-left: 10px solid $colorNaranja;
         }
         .habilidades__img {
             width: 80%;
@@ -101,13 +101,9 @@
             justify-content: center;
             align-items: center;
             img {
-                width: 50px;
-                height: 50px;
-                margin: 20px;
-                transition-duration: .3s;
-                &:hover {
-                    transform: scale(1.3);
-                }
+                width: 35px;
+                height: 35px;
+                margin: 16px;
             }
         }
       
@@ -126,23 +122,78 @@
         text-align: center;
         margin: 32px auto;
     }
-    .proyectos__container {
-        margin: 32px auto;
-        border-radius: 4px;
-        cursor: pointer;
-        &:hover img {
-            opacity: 1;
-        }
-        &:hover h5 {
-            display: none;
-        }
-        img {
+    .proyecto__container {
+        margin: 50px auto;
+        
+        .proyecto__container-img {
+            margin: auto;
+            width: 100%;
             height: 300px;
-            opacity: .3;
-            border-radius: 4px;
-            transition-duration: .5s;
+            padding: 5px;
+            border: 4px solid $colorNaranja;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                
+            }
+            .proyecto__nombre{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #fff2;
+                backdrop-filter: blur(10px);
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: $subtitulosMobile;
+                font-style: italic;
+                color: $colorNegro;
+                font-weight: 700;
+                opacity: 0;
+                transform: translateZ(1) scale(1.2);
+                transition: all .4s ease;
+                &:hover {
+                    opacity: 1;
+                    
+                    transform:translateZ(1) scale(1);
+                }
+            }
+
+        }
+        .proyecto__tecnologias {
+            margin: 20px 0;
+            color: $colorBlanco;
+            h6{
+                font-size: 18px;
+                font-family: $poppins;
+                font-weight: 500;
+                text-align: center;
+            }
+            
+        }
+        .proyecto__links {
+            margin: 20px 0;
+            text-align: center;
+            a{  
+                margin: 5px;
+                padding: 6px 20px;
+                text-decoration: none;
+                color: $colorBlanco;
+                font-weight: 500;
+                border: 2px solid $colorNaranja;
+                border-radius: 4px;
+                transition: .4s;
+               
+                &:hover {
+                    background-color: $colorNaranja;
+                }
+            }
         }
     }
+   
 }
 
 /* contacto */

@@ -6,7 +6,17 @@
 }
 body {
     background-color: #121212;
+    overflow-x: hidden;
 }
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: #232323;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #FB3D00;
+    border-radius: 5px;
+}
+
 a{
     text-decoration: none;
 }
