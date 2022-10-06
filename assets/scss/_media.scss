@@ -47,7 +47,8 @@
             text-decoration: none;
             color: $colorNaranja;
              margin: 0 15px;
-             font-size: 24px;
+             font-size: 28px;
+             transition-duration: .3s;
             &:hover {
                 color: $colorBlanco;
             }
@@ -90,7 +91,8 @@
 
     }
 
-    
+
+
 
 /* Habilidades */
 
@@ -105,13 +107,19 @@
     }
 }
 
+/* Contacto */
+
+    .contacto__redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
 }
 @media (min-width:1200px) {
     .home__desktop-container{
-    
-        
         .home__container {
-            
             .home-img {
                 
                 img {
@@ -129,30 +137,20 @@
     .sobreMi{
         h2{
             font-size: $titulosDesktop;
+            margin: 0 auto;
         }
         .sobreMi__container {
             padding: 15px 10px;
-            .sobreMi__container-img{
-                display: flex;
-                justify-content: center;
-                img {
-                    width: 200px;
-                    height: 200px;
-                }
-            }
             .sobreMi__container-text{
-                padding: 16px;
-                color: $colorBlanco;
-                font-size: $parrafosDesktop;
-                font-weight: 300;
                 .text__titulo {
-                    font-size: 22px;
-                  
+                    font-size: 24px;
+                    text-align: center;
+                    font-style: italic;
+                    line-height: 36px;
                 }
                 .text__parrafo {
-                    text-align: center;
+                    font-size: 17px;
                 }
-                
             }
     
         }
@@ -192,7 +190,7 @@
 
     .habilidades {
         h2 {
-            
+            margin: 0;
             font-size: $titulosDesktop;
         }
         .habilidades__container {
@@ -220,7 +218,8 @@
         padding-top: 60px;
         h2{
             font-size: $titulosDesktop;
-            font-family: $poppins;;
+            font-family: $poppins;
+            margin: 0;
         }
         .proyecto__container {
             margin: 50px auto;
@@ -269,3 +268,4 @@
 
 
 }
+
